@@ -1,7 +1,7 @@
 import React from "react";
 import Sky from "react-sky";
 import "./Landing.css";
-
+import Arrow from '../../images/arrow-right.png'
 
 export const LandingJSX = () => {
   return (
@@ -33,7 +33,7 @@ export const LandingJSX = () => {
         <div class="learn-btn-container">
           <button class="learn-btn">
           Learn more
-          <img src="../../images/arrow.right.png"/>
+          <img class="arrow" src={Arrow}/>
           </button>
         </div>
       </div>
