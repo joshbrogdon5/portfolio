@@ -33,7 +33,7 @@ export const LandingJSX = () => {
         <div class="learn-btn-container">
           <button class="learn-btn">
           Learn more
-          <i className="fas fa-arrow-right"></i>
+          <img src="../../images/arrow.right.png"/>
           </button>
         </div>
       </div>
