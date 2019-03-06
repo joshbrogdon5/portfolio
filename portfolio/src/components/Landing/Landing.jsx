@@ -2,6 +2,7 @@ import React from "react";
 import Sky from "react-sky";
 import "./Landing.css";
 
+
 export const LandingJSX = () => {
   return (
     <div class="container">
@@ -20,16 +21,21 @@ export const LandingJSX = () => {
         how={60}
         time={45}
         size={"100px"}
-        background={"palettedvioletred"}
+        background={"#333"}
       />
-      <div class="text">
-        Hey, I'm
-        <span> Josh Brogdon</span>
-        <br />
-        I'm a full stack Web Developer
-      </div>
-      <div>
-        <button>Learn more</button>
+      <div class="flex">
+        <div class="text">
+          Hello, I'm
+          <span> Josh Brogdon</span>
+          <br />
+          I'm a full stack Web Developer
+        </div>
+        <div class="learn-btn-container">
+          <button class="learn-btn">
+          Learn more
+          <i className="fas fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
     </div>
   );

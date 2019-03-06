@@ -1,4 +1,34 @@
 div.container{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+div.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    color: #fff;
+}
+
+div.text{
+    font-size: 20pt;
+    text-align: center;
+}
+
+div.learn-btn-container{
+    text-align: center;
+}
+
+button.learn-btn{
+    font-size: 16pt;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: #fff;
+    color: #fff;
+    padding: 10px;
 }
