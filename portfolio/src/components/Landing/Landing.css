@@ -25,13 +25,37 @@ div.learn-btn-container{
 
 button.learn-btn{
     font-size: 16pt;
-    margin-top: 10px;
+    margin-top: 10px !important;
     background-color: transparent;
     border: 1px solid;
     border-color: #fff;
     color: #fff;
     padding: 10px;
+    display: flex;
+    margin: auto;
+}
+
+button.learn-btn:hover{
+    cursor: pointer;
 }
 
 img.arrow{
+    margin-left: 2px;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow: hidden;
+}
+
+button.learn-btn:hover img.arrow {
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
 }
