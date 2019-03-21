@@ -6,6 +6,7 @@ import Arrow from '../../images/arrow-right.png'
 export const LandingJSX = () => {
   return (
     <div class="container">
+    {/* might get rid of react-sky and replace it with something better */}
       <Sky
         images={{
           0: "https://image.flaticon.com/icons/svg/141/141073.svg",
