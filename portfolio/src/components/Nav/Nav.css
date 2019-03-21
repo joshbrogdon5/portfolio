@@ -1,0 +1,29 @@
+div.navContainer{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 50px;
+    background-color: #1a1a1a;
+    border-bottom: 3px solid aqua;
+}
+
+div.navBtnContainer{
+    margin: 0 30px;
+    height: 100%;
+}
+
+button.navBtn{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 15pt;
+    transition: color 0.3s ease-out;
+}
+
+button.navBtn:hover{
+    cursor: pointer;
+    color: cyan;
+}
