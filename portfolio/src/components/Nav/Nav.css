@@ -25,5 +25,5 @@ button.navBtn{
 
 button.navBtn:hover{
     cursor: pointer;
-    color: cyan;
+    color: blueviolet;
 }

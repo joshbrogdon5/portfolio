@@ -1,6 +1,6 @@
-div.container{
+div.main-container{
     width: 100vw;
-    height: 100vh;
+    height: 97vh;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -15,7 +15,7 @@ div.flex{
 }
 
 div.text{
-    font-size: 20pt;
+    font-size: 22pt;
     text-align: center;
 }
 
@@ -58,4 +58,8 @@ button.learn-btn:hover img.arrow {
     -webkit-transform:rotate(90deg);
     -moz-transform:rotate(90deg);
     -o-transform:rotate(90deg);
+}
+
+span.name {
+    color: blueviolet;
 }

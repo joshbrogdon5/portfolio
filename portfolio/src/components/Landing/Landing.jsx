@@ -5,7 +5,7 @@ import Arrow from '../../images/arrow-right.png'
 
 export const LandingJSX = () => {
   return (
-    <div class="container">
+    <div class="main-container">
     {/* might get rid of react-sky and replace it with something better */}
       <Sky
         images={{
@@ -27,7 +27,7 @@ export const LandingJSX = () => {
       <div class="flex">
         <div class="text">
           Hello, I'm
-          <span> Josh Brogdon</span>
+          <span class='name'> Josh Brogdon</span>
           <br />
           I'm a full stack Web Developer
         </div>
