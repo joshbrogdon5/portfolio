@@ -28,8 +28,9 @@ export const LandingJSX = () => {
         <div class="text">
           Hello, I'm
           <span class='name'> Josh Brogdon</span>
+          .
           <br />
-          I'm a full stack Web Developer
+          I'm a full stack Web Developer.
         </div>
         <div class="learn-btn-container">
           <button class="learn-btn">
