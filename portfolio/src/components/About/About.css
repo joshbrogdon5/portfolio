@@ -35,3 +35,8 @@ img.skill-img {
     width: 125px;
     margin: 10px 50px;
 }
+
+img.profile-img {
+    width: 200px;
+    border-radius: 50%;
+}

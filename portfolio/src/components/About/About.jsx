@@ -8,6 +8,7 @@ import nodeLogo from '../../images/node-logo.png';
 import sqlLogo from '../../images/postgres-logo.png';
 import reactLogo from '../../images/react-logo.png';
 import reduxLogo from '../../images/redux-logo.png';
+import profilePic from '../../images/profile poc.png'
 
 
 export const AboutJSX = () => {
@@ -33,7 +34,7 @@ export const AboutJSX = () => {
             </div>
             <div class='personal-info-container'>
                 <div class='img-container'>
-                    <img src="" alt=""/>
+                    <img class='profile-img' src={profilePic} alt=""/>
                 </div>
             </div>
         </div>
