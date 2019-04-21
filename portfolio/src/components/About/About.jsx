@@ -36,6 +36,9 @@ export const AboutJSX = () => {
                 <div class='img-container'>
                     <img class='profile-img' src={profilePic} alt=""/>
                 </div>
+                <div class='info-container'>
+                    <h2>Yeah that's me!</h2>
+                </div>
             </div>
         </div>
     )
