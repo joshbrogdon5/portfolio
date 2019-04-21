@@ -2,15 +2,17 @@ div.about-container {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    justify-items: center;
     padding: 100px 0;
+    text-align: center;
 }
 
 div.about-header {
     font-size: 22pt;
     font-weight: bold;
     color: #333;
+    margin: 20px;
 }
 
 div.header-line {
@@ -18,4 +20,18 @@ div.header-line {
     padding-top: 10px;
     width: 50px;
     margin: auto;
+}
+
+div.skills-outer-container {
+    padding: 20px;
+}
+
+div.skills-inner-container {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+img.skill-img {
+    width: 125px;
+    margin: 10px 50px;
 }
