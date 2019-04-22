@@ -1,14 +1,14 @@
 import React from "react";
 import "./About.css";
-import angularLogo from '../../images/angular-logo.png';
-import cssLogo from '../../images/css-logo.png';
-import htmlLogo from '../../images/html-logo.png';
-import jsLogo from '../../images/JavaScript-logo.png';
-import nodeLogo from '../../images/node-logo.png';
-import sqlLogo from '../../images/postgres-logo.png';
-import reactLogo from '../../images/react-logo.png';
-import reduxLogo from '../../images/redux-logo.png';
-import profilePic from '../../images/profile poc.png'
+import angularLogo from '../../images/angular-logonew.png';
+import cssLogo from '../../images/css-logonew.png';
+import htmlLogo from '../../images/html-logonew.png';
+import jsLogo from '../../images/JavaScript-logonew.png';
+import nodeLogo from '../../images/node-logonew.png';
+import sqlLogo from '../../images/postgres-logonew.png';
+import reactLogo from '../../images/react-logonew.png';
+import reduxLogo from '../../images/redux-logonew.png';
+import profilePic from '../../images/profile-pic.jpg'
 
 
 export const AboutJSX = () => {
@@ -33,11 +33,12 @@ export const AboutJSX = () => {
                 </div>
             </div>
             <div class='personal-info-container'>
-                <div class='img-container'>
+                <div class='img-container wrap'>
                     <img class='profile-img' src={profilePic} alt=""/>
                 </div>
                 <div class='info-container'>
-                    <h2>Yeah that's me!</h2>
+                    <h2 style={{fontSize: '20pt'}}>Yeah that's me!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet massa tincidunt nunc pulvinar sapien et. Lacus sed viverra tellus in hac habitasse platea dictumst.</p>
                 </div>
             </div>
         </div>

@@ -36,7 +36,32 @@ img.skill-img {
     margin: 10px 50px;
 }
 
-img.profile-img {
-    width: 200px;
-    border-radius: 50%;
+div.personal-info-container {
+    text-align: center;
 }
+
+img.profile-img {
+    width: 400px;
+    display: block;
+    transform:rotate(45deg);
+    transform-origin: top center;
+    margin-left: 26px;
+}
+
+div.info-container {
+    width: 60%;
+    margin: auto;
+}
+
+.wrap {  
+    display: inline-block;
+    margin:50px;
+    overflow:hidden;
+    width:200px;
+    height:200px;
+    border-radius: 3px;
+    transform:rotate(45deg);
+    border: 1px solid whitesmoke;
+  }
+
+  
