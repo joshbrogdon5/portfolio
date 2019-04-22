@@ -9,6 +9,11 @@ export const ProjectJSX = () => {
                 <h1>Projects</h1>
                 <div class='header-line'></div>
             </div>
+            <div class='portfolio-container'>
+                <div class='portfolio-piece'>
+                    <img src="" alt=""/>
+                </div>
+            </div>
         </div>
     )
 }
