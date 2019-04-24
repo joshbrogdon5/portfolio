@@ -13,6 +13,7 @@ div.header {
     font-weight: bold;
     color: #333;
     margin: 20px;
+    opacity: .8;
 }
 
 div.header-line {
@@ -20,6 +21,7 @@ div.header-line {
     padding-top: 10px;
     width: 50px;
     margin: auto;
+    opacity: .8;
 }
 
 div.skills-outer-container {
