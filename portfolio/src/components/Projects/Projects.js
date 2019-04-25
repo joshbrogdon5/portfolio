@@ -4,6 +4,9 @@ import Modal from "react-modal";
 import Slide from "./Slide";
 import RightArrow from "./Right-Arrow";
 import LeftArrow from "./Left-Arrow";
+import reactLogo from "../../images/react-logonew.png";
+
+Modal.setAppElement("#root");
 
 const customStyles = {
   content: {
@@ -22,16 +25,7 @@ export default class Projects extends Component {
 
     this.state = {
       modalIsOpen: false,
-      images: [
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/desert.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/mountains.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/redsky.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/sandy-shores.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/tree-of-life.jpg"
-      ],
+      images: [reactLogo],
       currentIndex: 0
     };
   }
@@ -75,10 +69,17 @@ export default class Projects extends Component {
                 <h2 ref={subtitle => (this.subtitle = subtitle)}>Hello</h2>
                 <button onClick={this.closeModal}>close</button>
                 <div className="slider">
-                
-                  {this.state.images.map((image, i) => (
-                    <Slide key={i} image={image} />
-                  ))}
+                  <div
+                    className="slider-wrapper"
+                    style={{
+                      transform: `translateX(${this.state.translateValue}px)`,
+                      transition: "transform ease-out 0.45s"
+                    }}
+                  >
+                    {this.state.images.map((image, i) => {
+                      return <Slide image={image} key={i} />;
+                    })}
+                  </div>
 
                   <RightArrow goToNextSlide={this.goToNextSlide} />
                   <LeftArrow goToPrevSlide={this.goToPrevSlide} />
