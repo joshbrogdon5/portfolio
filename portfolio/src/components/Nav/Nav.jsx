@@ -3,18 +3,18 @@ import './Nav.css';
 
 export const NavJSX = () => {
   return (
-    <div class="navContainer">
-      <div class="navBtnContainer">
-        <button class="navBtn">Home</button>
+    <div className="navContainer">
+      <div className="navBtnContainer">
+        <button className="navBtn">Home</button>
       </div>
-      <div class="navBtnContainer">
-        <button class="navBtn">About</button>
+      <div className="navBtnContainer">
+        <button className="navBtn">About</button>
       </div>
-      <div class="navBtnContainer">
-        <button class="navBtn">Projects</button>
+      <div className="navBtnContainer">
+        <button className="navBtn">Projects</button>
       </div>
-      <div class="navBtnContainer">
-        <button class="navBtn">Contact</button>
+      <div className="navBtnContainer">
+        <button className="navBtn">Contact</button>
       </div>
     </div>
   );

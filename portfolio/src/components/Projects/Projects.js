@@ -25,8 +25,18 @@ export default class Projects extends Component {
 
     this.state = {
       modalIsOpen: false,
-      images: [reactLogo],
-      currentIndex: 0
+      images: [
+        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
+        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg",
+        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
+        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/desert.jpg",
+        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/mountains.jpg",
+        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/redsky.jpg",
+        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/sandy-shores.jpg",
+        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/tree-of-life.jpg"
+      ],
+      currentIndex: 0,
+      translateValue: 0
     };
   }
 
@@ -39,24 +49,35 @@ export default class Projects extends Component {
   };
 
   goToNextSlide = () => {
+    if (this.state.currentIndex === this.state.images.length - 1) {
+      return this.setState({
+        currentIndex: 0,
+        translateValue: 0
+      })
+    }
     this.setState(prevState => ({
-      currentIndex: prevState.currentIndex + 1
+      currentIndex: prevState.currentIndex + 1,
+      translateValue: prevState.translateValue + -(this.slideWidth())
     }));
   };
 
-  goToPrevSlide = () => {};
+  goToPrevSlide = () => { };
+
+  slideWidth = () => {
+    return document.querySelector('.slide').clientWidth
+  }
 
   render() {
     const { open } = this.state;
     return (
       <div>
-        <div class="projects-container">
-          <div class="header">
+        <div className="projects-container">
+          <div className="header">
             <h1>Projects</h1>
-            <div class="header-line" />
+            <div className="header-line" />
           </div>
-          <div class="portfolio-container">
-            <div class="portfolio-piece">
+          <div className="portfolio-container">
+            <div className="portfolio-piece">
               <img src="" alt="" />
               <button onClick={this.openModal}>Open</button>
               <Modal
@@ -76,9 +97,13 @@ export default class Projects extends Component {
                       transition: "transform ease-out 0.45s"
                     }}
                   >
-                    {this.state.images.map((image, i) => {
-                      return <Slide image={image} key={i} />;
-                    })}
+                    {
+                      this.state.images.map((image, i) => {
+                        return (
+                          <Slide image={image} key={i} />
+                        )
+                      })
+                    }
                   </div>
 
                   <RightArrow goToNextSlide={this.goToNextSlide} />
