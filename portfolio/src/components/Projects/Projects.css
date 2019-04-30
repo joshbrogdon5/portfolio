@@ -8,3 +8,22 @@ div.projects-container {
     padding: 100px 0;
     text-align: center;
 }
+
+div.slider {
+    height: 250px;
+    width: 100%;
+}
+
+div.slider-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.slide {
+    height: 100%;
+    width: 100%;
+}

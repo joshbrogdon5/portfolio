@@ -15,7 +15,8 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    transform: "translate(-50%, -50%)"
+    transform: "translate(-50%, -50%)",
+    width: "70%"
   }
 };
 
@@ -68,49 +69,46 @@ export default class Projects extends Component {
   }
 
   render() {
-    const { open } = this.state;
     return (
-      <div>
-        <div className="projects-container">
-          <div className="header">
-            <h1>Projects</h1>
-            <div className="header-line" />
-          </div>
-          <div className="portfolio-container">
-            <div className="portfolio-piece">
-              <img src="" alt="" />
-              <button onClick={this.openModal}>Open</button>
-              <Modal
-                isOpen={this.state.modalIsOpen}
-                onAfterOpen={this.afterOpenModal}
-                onRequestClose={this.closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-              >
-                <h2 ref={subtitle => (this.subtitle = subtitle)}>Hello</h2>
-                <button onClick={this.closeModal}>close</button>
-                <div className="slider">
-                  <div
-                    className="slider-wrapper"
-                    style={{
-                      transform: `translateX(${this.state.translateValue}px)`,
-                      transition: "transform ease-out 0.45s"
-                    }}
-                  >
-                    {
-                      this.state.images.map((image, i) => {
-                        return (
-                          <Slide image={image} key={i} />
-                        )
-                      })
-                    }
-                  </div>
-
-                  <RightArrow goToNextSlide={this.goToNextSlide} />
-                  <LeftArrow goToPrevSlide={this.goToPrevSlide} />
+      <div className="projects-container">
+        <div className="header">
+          <h1>Projects</h1>
+          <div className="header-line" />
+        </div>
+        <div className="portfolio-container">
+          <div className="portfolio-piece">
+            <img src="" alt="" />
+            <button onClick={this.openModal}>Open</button>
+            <Modal
+              isOpen={this.state.modalIsOpen}
+              onAfterOpen={this.afterOpenModal}
+              onRequestClose={this.closeModal}
+              style={customStyles}
+              contentLabel="Example Modal"
+            >
+              <h2 ref={subtitle => (this.subtitle = subtitle)}>Hello</h2>
+              <button onClick={this.closeModal}>close</button>
+              <div className="slider">
+                <div
+                  className="slider-wrapper"
+                  style={{
+                    transform: `translateX(${this.state.translateValue}px)`,
+                    transition: "transform ease-out 0.45s"
+                  }}
+                >
+                  {
+                    this.state.images.map((image, i) => {
+                      return (
+                        <Slide image={image} key={i} />
+                      )
+                    })
+                  }
                 </div>
-              </Modal>
-            </div>
+
+                <RightArrow goToNextSlide={this.goToNextSlide} />
+                <LeftArrow goToPrevSlide={this.goToPrevSlide} />
+              </div>
+            </Modal>
           </div>
         </div>
       </div>
