@@ -38,8 +38,28 @@ div.portfolio-piece{
     flex-direction: column;
     align-content: center;
     align-items: center;
+    position: relative;
+}
+
+img.portfolio-piece-img:hover + .openModalBtn{
+    display: block;
+
 }
 
 img.portfolio-piece-img{
     width: 60%;
+}
+
+button.openModalBtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: none;
+}
+
+button.openModalBtn:hover{
+    cursor: pointer;
+    display: block;
 }
