@@ -82,7 +82,7 @@ export default class Projects extends Component {
         <div className="portfolio-container">
           <div className="portfolio-piece">
             <img className="portfolio-piece-img" src={redBlock} alt="Red Block" />
-            <button className="openModalBtn" onClick={this.openModal}>Open</button>
+            <button className="openModalBtn" onClick={this.openModal}>LEARN MORE</button>
             <Modal
               isOpen={this.state.modalIsOpen}
               onAfterOpen={this.afterOpenModal}
@@ -116,7 +116,7 @@ export default class Projects extends Component {
           </div>
           <div className="portfolio-piece">
             <img className="portfolio-piece-img" src={hackReactor} alt="Hack Reactor Clone" />
-            <button className="openModalBtn" onClick={this.openModal}>Open</button>
+            <button className="openModalBtn" onClick={this.openModal}>LEARN MORE</button>
             <Modal
               isOpen={this.state.modalIsOpen}
               onAfterOpen={this.afterOpenModal}
@@ -150,7 +150,7 @@ export default class Projects extends Component {
           </div>
           <div className="portfolio-piece">
             <img className="portfolio-piece-img" src={swoleyBros} alt="Swoley Bros" />
-            <button className="openModalBtn" onClick={this.openModal}>Open</button>
+            <button className="openModalBtn" onClick={this.openModal}>LEARN MORE</button>
             <Modal
               isOpen={this.state.modalIsOpen}
               onAfterOpen={this.afterOpenModal}
@@ -184,7 +184,7 @@ export default class Projects extends Component {
           </div>
           <div className="portfolio-piece">
             <img className="portfolio-piece-img" src={oranges} alt="Oranges 2 Oranges" />
-            <button className="openModalBtn" onClick={this.openModal}>Open</button>
+            <button className="openModalBtn" onClick={this.openModal}>LEARN MORE</button>
             <Modal
               isOpen={this.state.modalIsOpen}
               onAfterOpen={this.afterOpenModal}
